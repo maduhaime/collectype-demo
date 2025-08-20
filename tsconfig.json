@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    // "allowImportingTsExtensions": true,
+    // "declaration": true,
+    // "declarationDir": "./dist",
+    // "emitDeclarationOnly": false,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2020",
+    "useDefineForClassFields": true
+  },
+  "include": ["src"]
+  // "exclude": ["node_modules"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "collectype-demo",
+  "private": true,
+  "version": "0.9.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "collectype": "file:vendor/collectype-0.9.0.tgz"
+  }
+}
