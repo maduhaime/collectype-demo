@@ -1,7 +1,4 @@
 import { Collection, FullFunctions } from 'collectype';
-import { booleanFilter, numberFilter } from 'collectype/utils/filters';
-import { BooleanOperEnum, NumberOperEnum } from 'collectype/enums';
-
 import { Pokemon } from '../models/Pokemon';
 
 /**
@@ -12,6 +9,8 @@ export class PokemonFunctions extends FullFunctions<Pokemon> {
   constructor(items: Pokemon[]) {
     super(items);
   }
+
+  
 
   /**
    * Filters Pokémon by their legendary status.
@@ -24,8 +23,7 @@ export class PokemonFunctions extends FullFunctions<Pokemon> {
    *   collection.fn.legendary(false).items; // all non-legendary Pokémon
    */
   legendary(flag: boolean = true): this {
-    this._items = booleanFilter(this._items, 'is_legendary', BooleanOperEnum.EQUALS, flag);
-    return this;
+    return this.booleanEquals('is_legendary', flag);
   }
 
   /**
@@ -37,8 +35,7 @@ export class PokemonFunctions extends FullFunctions<Pokemon> {
    *   collection.fn.experienced().items; // all Pokémon with base_experience > 150
    */
   experienced(): this {
-    this._items = numberFilter(this._items, 'base_experience', NumberOperEnum.GREATER_THAN, 150);
-    return this;
+    return this.numberGreaterThan('base_experience', 150);
   }
 }
 

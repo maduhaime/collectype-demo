@@ -1,7 +1,7 @@
 {
   "name": "collectype-demo",
   "private": true,
-  "version": "0.6.0",
+  "version": "0.9.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,11 +9,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/node": "^24.3.0",
+    "@types/node": "^24.5.2",
     "typescript": "^5.9.2",
-    "vite": "^4.4.5"
+    "vite": "^7.1.6"
   },
   "dependencies": {
-    "collectype": "^0.6.0"
+    "collectype": "^0.9.0"
   }
 }
