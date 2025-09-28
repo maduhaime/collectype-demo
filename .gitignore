@@ -2,7 +2,6 @@ coverage/
 dist/
 docs/
 node_modules/
-src/
 
 # Test files
 src/**/*.spec.ts
